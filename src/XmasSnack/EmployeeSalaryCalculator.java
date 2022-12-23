@@ -20,7 +20,7 @@ public class EmployeeSalaryCalculator {
         else if (hoursWorked > 40){
             int extraHours = hoursWorked - 40;
         double actualWorkHoursPay = 40 * 100;
-        double extraHoursPay = extraHours * 150;
+        double extraHoursPay = extraHours * 15550000;
         double grossPay = actualWorkHoursPay + extraHoursPay;
             System.out.println("The pay for regular hours is $100.\n " +
                     "The pay for extra hours is $150. \n\n" +
