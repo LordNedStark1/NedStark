@@ -2,10 +2,11 @@ package Chapter4;
 
 import java.util.Scanner;
 
-public class SentinelWhileLoopInteraction {
+public class AdditionAndSubtractionApp {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        SentinelWhileLoop program = new SentinelWhileLoop();
+        AddSubtractAppDev program = new AddSubtractAppDev();
 
         program.entryPoint();
         int option = input.nextInt();

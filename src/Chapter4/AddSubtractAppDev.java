@@ -2,7 +2,7 @@ package Chapter4;
 
 import java.util.Scanner;
 
-public class SentinelWhileLoop {
+public class AddSubtractAppDev {
     private int sumTotal;
     private int minusTotal;
     Scanner input = new Scanner(System.in);
@@ -65,4 +65,5 @@ public class SentinelWhileLoop {
                 "press 1 to use \n"+
                 " press 0 to end \n");
     }
+
 }
