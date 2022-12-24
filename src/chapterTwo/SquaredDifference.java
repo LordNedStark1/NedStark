@@ -21,5 +21,6 @@ public class SquaredDifference {
         var remainder = new Remainder();
         remainder.verifyNumber(7);
         System.out.println(remainder.returnVerifiedAnswer());
+
     }
 }
