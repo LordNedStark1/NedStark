@@ -53,7 +53,7 @@ public class DaysOfChristmas {
                     System.out.println(" eleven Pipers piping ");
 
                 case 10:
-                    System.out.println(" ten Lords a leaping ");
+                    System.out.println(" Ten lords a-leaping  ");
 
                 case 9:
                     System.out.println(" nine Ladies Dancing ");
