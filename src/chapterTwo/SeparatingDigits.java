@@ -4,12 +4,13 @@ import java.util.Scanner;
 
 public class SeparatingDigits {
     Scanner input = new Scanner(System.in);
-    private int counter;
+    private int counter ;
 
     public void DetermineEachNUmber() {
         System.out.println("enter a number: ");
         int number = input.nextInt();
         int first = number / 10000;
+
 
         int next = number / 1000;
         int second = next % 10;

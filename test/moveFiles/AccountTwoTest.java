@@ -18,7 +18,7 @@ public class AccountTwoTest {
 
     }
     @Test
-    void openingAccount() {
+   public void openingAccount() {
         // given
 //        when
         double balance = account.getBalance();
@@ -27,7 +27,7 @@ public class AccountTwoTest {
         assertEquals(2000,balance);
     }
     @Test
-    void Withdraw(){
+   public void Withdraw(){
         account.withdraw(1500, 555);
         assertEquals(500,account.getBalance());
     }

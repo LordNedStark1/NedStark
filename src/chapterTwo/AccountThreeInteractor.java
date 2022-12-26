@@ -16,7 +16,14 @@ public class AccountThreeInteractor {
         System.out.println("man new balance " +man.getBalance());
         System.out.println("woman new balance  " +woman.getBalance());
 
+        AccountThree.transfer(man, 1000, woman);
 
+        System.out.println("man new balance " +man.getBalance());
+        System.out.println("woman new balance  " +woman.getBalance());
 
+        AccountThree.transfer(woman, 1100, man);
+
+        System.out.println("man new balance " +man.getBalance());
+        System.out.println("woman new balance  " +woman.getBalance());
     }
 }
