@@ -7,5 +7,7 @@ public class PromptAnswer {
             this.prompt =prompt;
             this.answer = answer;
         }
+
+
 }
 

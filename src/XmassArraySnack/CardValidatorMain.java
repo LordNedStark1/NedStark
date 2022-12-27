@@ -14,7 +14,7 @@ public class CardValidatorMain {
         validator.cardNumberCounter(validator.returnCardNumber());
 
         validator.separateCardNumbers(validator.returnCardNumber());
-
+        validator.collectingEverySecondNumber();
 
     }
 }
