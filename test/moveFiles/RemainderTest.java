@@ -1,4 +1,4 @@
-package Ch2Ch3AndCh4AssignmentsRedoWithTest;
+package moveFiles;
 
 import chapterTwo.Remainder;
 import org.junit.jupiter.api.Test;

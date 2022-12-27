@@ -3,7 +3,7 @@ package XmasSnack;
 public class DaysOfChristmas {
     public static void main(String[] args) {
 
-        for (int day = 12; day <= 12; day++) {
+        for (int day = 1; day <= 12; day++) {
             System.out.println("On the ");
             switch (day) {
                 case 12:
