@@ -3,7 +3,7 @@ package Assignment;
 public class AirCondition {
     private String name;
     private boolean isOn;
-    private int temperature;
+    private  int temperature;
 
     public AirCondition(String panasonic) {
         this.name= panasonic;
