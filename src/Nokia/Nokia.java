@@ -4,7 +4,7 @@ import java.lang.ref.SoftReference;
 import java.util.Scanner;
 
 public class Nokia {
-    static Scanner scan = new Scanner(System.in);
+    Scanner scan = new Scanner(System.in);
 
     public void menu() {
         System.out.println("""
@@ -28,6 +28,62 @@ public class Nokia {
             default:
                 System.out.println("please try again");
                 menu();
+        }
+    }
+    public void showCallDuration(){
+        System.out.println("""
+                press 1 for last call, 2 for all calls
+                3 for received calls, 4 for dialled calls
+                5 to clear list, 6 to go back to call register""");
+
+        int callDurationOption = scan.nextInt();
+        switch (callDurationOption){
+            case 1:
+                System.out.println("last call duration");
+                System.out.println("press 1 to go back");
+                int back = scan.nextInt();
+                if(back==1 ) {
+                    showCallDuration();
+                }
+                break;
+            case 2:
+                System.out.println("all calls duration");
+                System.out.println("press 1 to go back");
+                 back = scan.nextInt();
+                if(back==1 ) {
+                    showCallDuration();
+                }
+                break;
+            case 3:
+                System.out.println("received calls duration ");
+                System.out.println("press 1 to go back");
+                back = scan.nextInt();
+                if(back==1 ) {
+                    showCallDuration();
+                }
+                break;
+            case 4:
+                System.out.println("dialled calls duration");
+                System.out.println("press 1 to go back");
+                back = scan.nextInt();
+                if(back==1 ) {
+                    showCallDuration();
+                }
+                break;
+            case 5:
+                System.out.println("clear timer");
+                System.out.println("press 1 to go back");
+                back = scan.nextInt();
+                if(back==1 ) {
+                    showCallDuration();
+                }
+                break;
+            case 6:
+                callRegister();
+                break;
+            default:
+                System.out.println("invalid option");
+                showCallDuration();
         }
     }
 
@@ -139,7 +195,7 @@ public class Nokia {
         System.out.println("press 1 for missed calls\n" +
                 " 2 for received calls\n" +
                 " 3 for dialed numbers, 4 for erase call list\n" +
-                "5 to go back to menu");
+                "5 to show all calls, 6 to go back to menu");
 
         int callRegOption = scan.nextInt();
 
@@ -180,7 +236,10 @@ public class Nokia {
                     case 2 -> menu();
                 }
                 break;
-            case 5 :menu();
+            case 5:
+                showCallDuration();
+                break;
+            case 6: menu();
             break;
             default: { System.out.println("please try again");
             callRegister();
