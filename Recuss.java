@@ -17,7 +17,10 @@ public class Recuss {
         return result;
     }
     public static void inner(char [][] myChar){
-        result += myChar[column][row] + " ";
+        
+        if( myChar[column][row] == 'O') result += 0 + " ";
+        if( myChar[column][row] == 'X') result += 1 + " ";
+       
         row++;
         if (row < myChar[column].length) {
             inner(myChar);
