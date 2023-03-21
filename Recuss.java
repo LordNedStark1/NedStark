@@ -1,13 +1,13 @@
 package newTurtle;
 
-public class Recuss {
+public class UsingRecursion {
     private static int innerSizeIncremental = 0;
     private static String result = "";
     private static int column = 0;
     private static int row = 0;
 
     public static String display2D(char [][] myChar){
-        inner(myChar);
+        innerMethodToConcat(myChar);
         result += "\n";
         column++;
         if ( column < myChar.length ){
@@ -16,7 +16,7 @@ public class Recuss {
         };
         return result;
     }
-    public static void inner(char [][] myChar){
+    public static void innerMethodToConcat(char [][] myChar){
         
         if( myChar[column][row] == 'O') result += 0 + " ";
         if( myChar[column][row] == 'X') result += 1 + " ";
